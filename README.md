@@ -1,5 +1,6 @@
 # GitHub Languages CLI
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jaebradley/github-languages-cli.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/jaebradley/github-languages-cli.svg?branch=master)](https://travis-ci.org/jaebradley/github-languages-cli)
 [![npm](https://img.shields.io/npm/dt/github-languages-cli.svg)](https://www.npmjs.com/package/github-languages-cli)
 [![npm](https://img.shields.io/npm/v/github-languages-cli.svg)](https://www.npmjs.com/package/github-languages-cli)
