@@ -3,13 +3,15 @@
   "version": "0.0.0-development",
   "description": "CLI to search for identified languages on GitHub",
   "main": "./build/index.js",
-  "bin": {},
+  "bin": {
+    "ghlang": "./build/executables/ghlang.js"
+  },
   "global": true,
   "scripts": {
     "codecov": "codecov",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "compile": "babel src/ -d build/ --delete-dir-on-start --copy-files",
-    "compile:prod": "BABEL_ENV=production babel npm run compile",
+    "compile:prod": "BABEL_ENV=production npm run compile",
     "lint": "eslint --ext .js .",
     "test": "jest --coverage --passWithNoTests",
     "prepublishOnly": "npm run compile:prod",
@@ -31,8 +33,11 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0-beta.44",
+    "chalk": "^2.3.2",
     "commander": "^2.15.1",
-    "inquirer": "^5.2.0"
+    "github-languages-client": "^1.0.2",
+    "inquirer": "^5.2.0",
+    "inquirer-autocomplete-prompt": "^0.12.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.44",
