@@ -23,4 +23,18 @@ npm install github-languages-cli -g
 ghlang
 ```
 
+## Emoji explanation
+
+* Language Type
+  * Programming: 🖥️
+  * Data: 📊
+  * Markup: 📓
+  * Prose: 🖋️
+* Language Family: 👨‍👩‍👧‍👦
+  * Not all languages have a "family" or "group" attribute, but `JSX` is part of the `JavaScript` language group, for example.
+* Searchable: 🔍
+  * If a language is "searchable" i.e. it can be used in Advanced Search (and similar features)
+* ID: 🆔
+  * Every language has an internal id
+
 ![alt-text](https://imgur.com/z5SeaEl.png)
