@@ -23,7 +23,14 @@
     "type": "git",
     "url": "https://github.com/jaebradley/github-languages-cli.git"
   },
-  "keywords": [],
+  "keywords": [
+    "github",
+    "languages",
+    "programming languages",
+    "cli",
+    "github languages",
+    "github programming languages"
+  ],
   "bugs": {
     "url": "https://github.com/jaebradley/github-languages-cli/issues"
   },
@@ -35,7 +42,7 @@
     "@babel/runtime": "^7.0.0-beta.44",
     "chalk": "^2.3.2",
     "commander": "^2.15.1",
-    "github-languages-client": "^1.0.2",
+    "github-languages-client": "^1.0.6",
     "inquirer": "^5.2.0",
     "inquirer-autocomplete-prompt": "^0.12.2"
   },
