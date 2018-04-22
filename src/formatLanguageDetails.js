@@ -14,6 +14,7 @@ const formatLanguageDetails = ({
   color,
   group,
   searchable,
+  aceMode,
 }) => {
   const formattedName = color ? chalk.hex(color).bold(name) : chalk.bold.cyanBright(name);
 
@@ -27,6 +28,10 @@ const formatLanguageDetails = ({
 
   if (searchable) {
     details += ` ${chalk.bold.yellowBright('|')} 🔍 `;
+  }
+
+  if (aceMode) {
+    details += ` ${chalk.bold.yellowBright('|')} 🖊️  ${chalk.bold.bgYellowBright(`   ${chalk.bold.blueBright(aceMode)}   `)}`;
   }
 
   return details;
