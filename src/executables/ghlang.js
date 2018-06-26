@@ -3,7 +3,7 @@
 import program from 'commander';
 
 import pkg from '../../package.json';
-import search from '../';
+import search from '..';
 
 const execute = async () => {
   try {
