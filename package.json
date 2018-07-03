@@ -43,7 +43,7 @@
     "@babel/runtime": "^7.0.0-beta.44",
     "chalk": "^2.3.2",
     "commander": "^2.15.1",
-    "github-languages-client": "^1.0.6",
+    "github-languages-client": "^1.0.16",
     "inquirer": "^6.0.0",
     "inquirer-autocomplete-prompt": "^0.12.2"
   },
