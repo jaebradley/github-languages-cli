@@ -1,20 +1,23 @@
 {
-  "presets": [
-    "@babel/preset-env"
-  ],
   "env": {
     "production": {
       "presets": [
-        "minify"
+       [
+         "@babel/env",
+          { "modules": false },
+          "minify"
+        ]
       ]
     }
   },
   "plugins": [
     "@babel/transform-runtime",
     "@babel/transform-async-to-generator",
-    "@babel/plugin-proposal-object-rest-spread"
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-external-helpers"
   ],
   "ignore": [
-    "node_modules"
+    "node_modules/**",
+    "*.test.js"
   ]
 }
