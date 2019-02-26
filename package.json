@@ -68,7 +68,7 @@
     "husky": "^0.14.3",
     "jest": "^22.4.3",
     "rollup": "^0.64.0",
-    "rollup-plugin-analyzer": "^2.1.0",
+    "rollup-plugin-analyzer": "^3.0.0",
     "rollup-plugin-babel": "^4.0.0-beta.7",
     "rollup-plugin-babel-minify": "^6.0.0",
     "rollup-plugin-cleaner": "^0.2.0",
