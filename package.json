@@ -43,7 +43,7 @@
     "chalk": "^2.3.2",
     "commander": "^2.15.1",
     "github-languages-client": "^1.0.16",
-    "inquirer": "^6.0.0",
+    "inquirer": "^7.0.0",
     "inquirer-autocomplete-prompt": "^1.0.0"
   },
   "devDependencies": {
