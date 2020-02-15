@@ -1,14 +1,12 @@
 import babel from 'rollup-plugin-babel';
-import resolve from 'rollup-plugin-node-resolve';
+import resolve from '@rollup/plugin-node-resolve';
 import localResolve from 'rollup-plugin-local-resolve';
 import filesize from 'rollup-plugin-filesize';
-import minify from 'rollup-plugin-babel-minify';
-import { terser } from 'rollup-plugin-terser';
-import shebang from 'rollup-plugin-shebang';
+import hashbang from 'rollup-plugin-hashbang';
 import includePaths from 'rollup-plugin-includepaths';
 import cleaner from 'rollup-plugin-cleaner';
 import { plugin as analyze } from 'rollup-plugin-analyzer';
-import commonjs from 'rollup-plugin-commonjs';
+import commonjs from '@rollup/plugin-commonjs';
 import json from 'rollup-plugin-json';
 
 import pkg from './package.json';
@@ -61,6 +59,7 @@ const config = {
       preferConst: true,
       indent: '  ',
     }),
+    hashbang(),
     babel({
       exclude: 'node_modules/**',
       runtimeHelpers: true,
@@ -74,10 +73,7 @@ const config = {
       browser: true,
       modulesOnly: true,
     }),
-    minify(),
-    terser(),
     commonjs(),
-    shebang(),
     filesize(),
     analyze(),
   ],

@@ -13,7 +13,7 @@ const search = async () => (
       type: 'autocomplete',
       name: 'gitHubLanguage',
       message: 'Search for GitHub language',
-      source: async (answersSoFar, searchTerm) => client.search(searchTerm || '').map(result => formatLanguageDetails(result)),
+      source: async (answersSoFar, searchTerm) => client.search(searchTerm || '').map((result) => formatLanguageDetails(result)),
     },
   ])
 );
