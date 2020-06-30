@@ -37,7 +37,7 @@
   "homepage": "https://github.com/jaebradley/github-languages-cli#readme",
   "dependencies": {
     "@babel/runtime": "^7.9.6",
-    "chalk": "^4.0.0",
+    "chalk": "^4.1.0",
     "commander": "^5.1.0",
     "github-languages-client": "^1.0.80",
     "inquirer": "^7.1.0",
