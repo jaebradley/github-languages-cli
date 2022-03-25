@@ -16,7 +16,9 @@
     "prepublishOnly": "npm run build:production",
     "semantic-commit": "npx commit",
     "semantic-release": "npx semantic-release",
-    "travis-deploy-once": "npx travis-deploy-once"
+    "travis-deploy-once": "npx travis-deploy-once",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "license": "MIT",
   "repository": {
@@ -41,7 +43,8 @@
     "commander": "^5.1.0",
     "github-languages-client": "^1.0.86",
     "inquirer": "^7.3.2",
-    "inquirer-autocomplete-prompt": "^1.0.2"
+    "inquirer-autocomplete-prompt": "^1.0.2",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -77,5 +80,6 @@
     "rollup-plugin-local-resolve": "^1.0.7",
     "semantic-release": "^17.0.3",
     "travis-deploy-once": "^5.0.11"
-  }
+  },
+  "snyk": true
 }
